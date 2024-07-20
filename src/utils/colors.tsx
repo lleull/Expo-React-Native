@@ -1,6 +1,7 @@
 export const Colors = {
-    PrimaryBlue: "#477DD8",
+    PrimaryBlue: "#6C73D2",
     lightgray: "#F0F2F4",
-    darkblue: "#090D55",
-    lightblue:"#DFE1FE"
+    darkblue: "#6C73D2",
+    lightblue: "#DFE1FE",
+    green: "#03D510"
 }
