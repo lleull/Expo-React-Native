@@ -13,7 +13,6 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 export const HomeStack = () => {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      {/* <Stack.Screen name="tabScreens" component={TabNavigator} /> */}
       <Stack.Screen name="HOMESCREEN" component={HomeScreen} />
     </Stack.Navigator>
   );
@@ -46,7 +45,7 @@ export const ProfileStack = () => {
 
 export const StackNavigation = () => {
   const { userData } = AuthHook()
-  if (userData) {
+  if (userData && userData?.length > 0) {
     return <HomeStack />;
   } else {
     return <ProfileStack />;

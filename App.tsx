@@ -20,26 +20,7 @@ const Stack = createStackNavigator();
 export default function App() {
   const { persistor, store } = configureStore();
   store.runSaga(rootSaga);
-  // const [isLoaded, setIsLoaded] = useState(false);
-  // const [error, setError] = useState(null);s
-  // const loadFonts = async () => {
-  //   try {
-  //     await Font.loadAsync(customFonts);
-  //   } catch (error) {
-  //     setError(error);
-  //   } finally {
-  //     setIsLoaded(true);
-  //   }
-  // };
 
-  // if (error) {
-  //   // Handle font loading error
-  //   console.error('Error loading fonts:', error);
-  // } else if (!isLoaded) {
-  //   return <AppLoading />; // Display a loading indicator while fonts load
-  // } else {
-  //   // App content goes here
-  // }
 
 
   return (
